@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Balance | Premium Fitness Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .teko { font-family: 'Teko', sans-serif; text-transform: uppercase; }
+        .accent-text { color: #ccff00; }
+        .accent-bg { background-color: #ccff00; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        /* Animation for a professional look */
+        .fade-in { animation: fadeIn 1.2s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav className="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center fixed top-0 w-full flex justify-between p-6 z-50">
+        <h1 class="teko text-4xl italic tracking-tighter">BODY <span class="accent-text">BALANCE</span></h1>
+        <div class="hidden md:block text-xs font-bold tracking-[0.2em]">AMIUN • KFAR SAROUN</div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070" class="w-full h-full object-cover opacity-30" alt="Gym">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]"></div>
+        </div>
+
+        <div class="relative z-10 fade-in">
+            <h2 class="teko text-7xl md:text-9xl leading-none mb-4">
+                TRAIN WITH <br> <span class="accent-text">NO LIMITS</span>
+            </h2>
+            <p class="max-w-xl mx-auto text-gray-400 mb-8 uppercase tracking-[0.3em] text-[10px] md:text-xs">
+                Premium Equipment • Expert Staff • Fantastic View
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/96181355655" class="accent-bg text-black px-10 py-4 font-bold uppercase tracking-widest hover:scale-105 transition duration-300 rounded-sm">
+                    Join Now
+                </a>
+                <a href="#features" class="glass px-10 py-4 font-bold uppercase tracking-widest hover:bg-white/10 transition duration-300 rounded-sm">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 -mt-20 relative z-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass p-6 text-center">
+            <p class="accent-text teko text-3xl">4.7 ⭐</p>
+            <p class="text-[9px] uppercase tracking-widest text-gray-500">Google Rating</p>
+        </div>
+        <div class="glass p-6 text-center">
+            <p class="accent-text teko text-3xl">76+</p>
+            <p class="text-[9px] uppercase tracking-widest text-gray-500">Top Reviews</p>
+        </div>
+        <div class="glass p-6 text-center">
+            <p class="accent-text teko text-3xl">9:30 PM</p>
+            <p class="text-[9px] uppercase tracking-widest text-gray-500">We Close At</p>
+        </div>
+        <div class="glass p-6 text-center">
+            <p class="accent-text teko text-3xl">Kfar Saroun</p>
+            <p class="text-[9px] uppercase tracking-widest text-gray-500">Our Location</p>
+        </div>
+    </section>
+
+    <section id="features" class="py-32 px-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <span class="accent-text font-bold text-4xl">01</span>
+                <h3 class="teko text-3xl">Elite Equipment</h3>
+                <p class="text-gray-500 text-sm italic">"The gym offers a fantastic view from the treadmills." - Johnny M.</p>
+            </div>
+            <div class="space-y-4">
+                <span class="accent-text font-bold text-4xl">02</span>
+                <h3 class="teko text-3xl">Clean Environment</h3>
+                <p class="text-gray-500 text-sm italic">Consistently maintained to the highest hygiene standards for your safety.</p>
+            </div>
+            <div class="space-y-4">
+                <span class="accent-text font-bold text-4xl">03</span>
+                <h3 class="teko text-3xl">Professional Staff</h3>
+                <p class="text-gray-500 text-sm italic">Friendly atmosphere and expert guidance to reach your fitness goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#ccff00] py-20 text-black text-center px-6">
+        <h2 class="teko text-6xl mb-6">Start Your Transformation</h2>
+        <p class="mb-10 font-bold uppercase tracking-widest">Call us at 81 355 655</p>
+        <a href="https://wa.me/96181355655" class="bg-black text-white px-12 py-5 font-bold uppercase tracking-widest hover:opacity-90 transition">
+            Message on WhatsApp
+        </a>
+    </footer>
+
+    <div class="py-6 text-center text-gray-700 text-[10px] tracking-[0.4em] uppercase">
+        © 2026 Body Balance Amioun. All Rights Reserved.
+    </div>
+
+</body>
+</html>
